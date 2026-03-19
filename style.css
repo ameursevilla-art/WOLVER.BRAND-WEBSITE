@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+     
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 40px;
+     align-items: center;
+
+     
+/* logo wolver */
+.logo{
+
+    
+    font-weight: bold;
+     font-size: 22px;
+     letter-spacing: 10px;
+     
+
+    }
+    .nov{
+         font-size: 20px;
+         cursor: pointer;
+         
+    }
+/* **************************
+ links
+************************ */
+.linka{
+    display: flex;
+    gap: 20px;
+}
+ .linka a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    transition: 0.3s;
+
+ }
+ .linka a:hover{
+    opacity: 0.1;
+ }
+}
+@media ( max-width:768PX) {
+    div.linka{
+         display: none;
+    }
+    @media (max-width:(768px)) {
+         header{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 15px 20px;
+         }
+    }
+    @media (max-width:768px) {
+        .logo h1{
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width:768px) {
+         nav.nov i{
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+/* ************************
+        hero
+*****************************/
+
+.hero{
+     position: relative;
+      
+      height: 500px;
+       img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }
+
+    
+     .hero-content{
+        text-align: center;
+        left: 40%;
+ position: absolute;
+ top: 50%;
+ font-size: 14px;
+ transform: translateY(-50% -50%);
+ color: white;
+}
+    .class{
+        letter-spacing: 2px;
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 10px;
+         opacity: 0.6; 
+         
+        
+         
+    }  
+p{
+    letter-spacing: 2px;
+ margin-bottom: 20px; 
+ font-size: 1rem;  
+ font-weight: bold;
+}
+.butt{
+    
+    border: 2px solid white;
+    padding: 10px 40px;
+    background: transparent;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+transition: 0.2s;
+font-size: 14px;
+
+
+}
+.butt:hover{
+     background: white;
+     color: black;
+     transition: 0.2s;
+     /*
+    transform: translateY(5px);
+    transition: 0.2s;
+    opacity: 0.6;*/
+}
+.bnt{
+    color: red;
+}
+     }
+
+    @media (max-width:768px) {
+        .hero-content{
+            left: 50%;
+            transform: translateY(-50%,-50%);
+            align-items: center;
+        }
+    } 
+    
+/*  shadow hoodie */
+.collection{
+background-color:whitesmoke;
+    padding: 80px 10%;
+     text-align: center;
+     h2{
+         margin-bottom: 40px;
+         letter-spacing: 10px;
+         font-size: 2rem;
+     }
+     .products{
+         display: flex;
+         gap: 1rem;
+         justify-content: center;
+     }
+.product{
+    width: 250px;
+    transition: 0.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.product:hover{
+    transform: translateY(-6px);
+}
+.product img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+transition: 0.4s;
+}
+img:hover{
+transform: scale(1.05);
+
+}
+.product h3{
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+.product p{
+    color: gray;
+    margin-top:5px ;
+}
+button{
+    padding: 8px 20px;
+margin-top: 10px;
+background: transparent;
+border:2px solid black;
+cursor: pointer;
+transition: 0.3s;
+margin-bottom: 1rem;
+
+}
+button:hover{
+    background: black;
+    color: white;
+}
+}
+@media ( max-width:768PX) {
+    .products{
+          flex-direction: column;
+          align-items: center;
+    }
+    
+}
+
+/* ************************
+vedios styley
+************************** */
+
+    
+
+.wolf-story{
+    position: relative;
+    height:  350px;
+    color: white;
+    width: 100%;
+    overflow: hidden;}
+    .wolf-video{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    .wolf-video{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .wolf-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        max-width: 400px;
+
+    }
+    /* --------------------------
+    best selleres
+    --------------------------- */
+.best-selleres{
+      padding: 80px 5%;
+      background: whitesmoke;
+      color: black;
+       text-align: center; 
+       h2{
+          margin-bottom: 2rem;
+          letter-spacing: 10px;
+          font-size: 2rem;
+
+      }
+      .best-products{
+         display: flex;
+         gap: 25px;
+         justify-content: center;
+         /* flex-wrap: wrap; */
+      }
+      .best-product{
+width: 220px;
+overflow: hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      }
+.best-product img{
+    border-radius: 5px;
+     width: 100%;
+     height: 250PX;
+     object-fit: cover;
+transition: 0.3s;
+background: transparent;
+}
+.best-product img:hover{
+    transform: scale(1.1);
+}
+.best-product:hover{
+    transform: translateY(-8px);
+}
+.best-product h3{
+     margin-top: 5px;
+     font-size: 1.1rem;
+     font-weight: bold;
+     letter-spacing: 2px;
+}
+.best-product p{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+
+}
+span{
+     font-weight: bold;
+     margin-bottom: 10px;
+     display: block;
+}
+.add-to{
+    margin-bottom: 1rem;
+    border: 1px solid black;
+     padding: 10px 30px;
+     font-size: 10px;
+     font-weight: bold;
+
+}
+.add-to:hover{
+color: white;
+    background: black;
+    transform: translateY(-5px);
+}
+}
+@media ( max-width:768PX) {
+    .best-products{
+         flex-direction: column;
+         align-items: center;
+    }
+    @media (max-width:(768px)) {
+         .product,
+         .best-product{
+            width: 90%;
+         }
+    }
+    @media (max-width:768px) {
+        .collection,
+        .best-selleres{
+            padding: 40px 5%;
+        }
+    }
+}
+
+/* -----------------------------------------------------------
+footer-
+--------------------------------------------------------- */
+.footer{
+    border-top:1px solid rgba(255,255,255,0.1);
+    background: #0d0d0d;
+    color:  white;
+    padding: 60px 10%;
+    .footer-contenar{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+   .footer-logo h2 {
+     margin-bottom: 10px;
+   }
+   .footer-social h4,
+   .footer-links h4{
+    margin-bottom: 15px;
+   }
+   .footer-social a,
+   .footer-links a{
+    display: block;
+    margin-bottom: 8px;
+    color: gray;
+    transition: 0.3s;
+
+   }
+   .footer-social a:hover,
+   .footer-links a:hover{
+    color: white;}
+
+    
+    
+
+    .footer-bottom{
+         text-align: center;
+         margin-top: 40px;
+         opacity: 0.6;
+         letter-spacing: 2px;
+
+    }
+    .cls{
+color: red;
+    }
+    
+}
+
+.footer-social a i{
+        color: gray;
+    }
+    .insta:hover i{
+        color: #e1306c;
+
+    }
+    .tiktok:hover i{
+        color: #69c9d0;
+
+    }
+    .faceebook:hover i{
+        color: #1877f2;
+    }
+    .footer-social a:hover i{
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+
+/* ***************************
+@mdei(max-wedth
+****************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* button y a  */
+     a,button{
+                    all: unset;
+                    display: inline-block;
+                    transition: 0.2s; 
+
+                 }
+                 button:hover,
+                 a:hover{
+                    cursor: pointer;
+                 }
+                 a:hover,
+                 button:active{
+                    scale: 0.9;
+                 }
+                  li{
+        list-style: none;
+
+      }
